@@ -8,7 +8,7 @@ When react was first introduced
 
 ## Test Gist
 
-{% gist d2d9d7d6aff665ab4df0c18e32dc0520 %}
+{% gist d2d9d7d6aff665ab4df0c18e32dc0520#file-index-html-L4-L6 %}
 
 ## Test Codepen
 
