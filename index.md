@@ -1,10 +1,28 @@
-# React Hooks Intro
+> All content contained in this talk can be found in the [React Docs](https://reactjs.org/docs/getting-started.html). For specific info on hooks check out the [intro video](https://youtu.be/dpw9EHDh2bM) and the [hooks docs](https://reactjs.org/docs/hooks-intro.html)
 
-> All content contained in this talk can be found in [the React Docs](https://reactjs.org/docs/hooks-intro.html)
+# 1. A Short History of React Component Patterns
 
-## 1. A Short History of React Component Patterns
+When react was first introduced in 2013 it included it's own class system for the creation of components via the ```React.createClass()``` method. This method takes a plain old Javascript object and creates a component class. Something like the following:
 
-When react was first introduced 
+``` javascript
+import React from 'react';
+
+class Contacts extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  handleClick() {
+    console.log(this); // React Component instance
+  }
+  render() {
+    return (
+      <div></div>
+    );
+  }
+}
+
+export default Contacts;
+```
 
 ## Test Gist
 
