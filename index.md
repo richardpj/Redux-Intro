@@ -2,27 +2,26 @@
 
 # 1. A Short History of React Component Patterns
 
-When react was first introduced in 2013 it included it's own class system for the creation of components via the ```React.createClass()``` method. This method takes a plain old Javascript object and creates a component class. Something like the following:
+When react was first introduced in 2013 it included it's own class system for the creation of components via the ```React.createClass()``` method. This method takes a plain old Javascript object (Pojo) and creates a component class. Something like the following:
 
 ``` javascript
 import React from 'react';
 
-class Contacts extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Contacts = React.createClass({
   handleClick() {
     console.log(this); // React Component instance
-  }
+  },
   render() {
     return (
       <div></div>
     );
   }
-}
+});
 
 export default Contacts;
 ```
+
+One would add properties to the object for event handlers, component lifecycle event handlers and the special ```render()``` method for rendering the virtual DOM (either by returning [JSX](https://reactjs.org/docs/introducing-jsx.html) or utilising ```React.createElement()```).
 
 ## Test Gist
 
