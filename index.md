@@ -21,7 +21,7 @@ const Contacts = React.createClass({
 export default Contacts;
 ```
 
-One would add properties to the object for event handlers, component lifecycle event handlers and the special ```render()``` method for rendering the virtual DOM (either by returning [JSX](https://reactjs.org/docs/introducing-jsx.html) or utilising ```React.createElement()```).
+One would add properties to the object for event handlers, component lifecycle event handlers and the special ```render()``` method for rendering the virtual DOM (either by returning [JSX](https://reactjs.org/docs/introducing-jsx.html) or utilising ```React.createElement()```). 
 
 ## Test Gist
 
